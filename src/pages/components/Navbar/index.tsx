@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 const Navbar = () => {
   return (
     <>
@@ -72,6 +72,11 @@ const Navbar = () => {
         </motion.li>
       </ul>
     </motion.nav>
+    <Link href={"/"} className="absolute top-1/2 left-1/2"> <motion.p
+     initial={{ y: -100 }}
+     animate={{ y: 0 }}
+     transition={{ type: "spring", stiffness: 75 }}
+     >Back</motion.p></Link>
     </>
   );
 };
