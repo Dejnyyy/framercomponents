@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.gradient-line {
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      #fff700,
+      #ff00bb,
+      #42c9ff,
+      #fff700
+    );
+    box-shadow: 0px 0px 10px rgba(255, 77, 109, 0.7);
+  }
+  
