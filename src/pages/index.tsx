@@ -46,6 +46,14 @@ export default function Home() {
               </p>
             </Link>
           </motion.div>
+         
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href={"/components/Navbar2"}>
+              <p className="cursor-pointer text-lg font-medium px-6 py-2 rounded bg-gradient-to-tr from-pink-500 to-purple-500 hover:scale-105 transform transition duration-300 shadow-lg">
+                Navbar
+              </p>
+            </Link>
+          </motion.div>
         </motion.div>
       </main>
     </>

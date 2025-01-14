@@ -10,7 +10,7 @@ const Checkbox = () => {
 
   return (
     <motion.div
-      className={`w-6 h-6 mr-2 rounded-md border-2 cursor-pointer transition-all ${
+      className={`w-6 h-6 rounded-md border-2 cursor-pointer transition-all ${
         checked ? "border-lime-400 bg-lime-400" : "border-gray-400 bg-transparent"
       }`}
       onClick={handleChange}
