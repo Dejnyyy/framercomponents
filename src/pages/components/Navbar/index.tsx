@@ -19,41 +19,52 @@ const Navbar = () => {
       {/* Right Section */}
       <ul className="flex gap-6 items-center text-sm font-medium">
         <motion.li
-          className="cursor-pointer hover:text-gray-400"
+          className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
           About Us
         </motion.li>
         <motion.li
-          className="cursor-pointer hover:text-gray-400"
+          className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
           Contact
         </motion.li>
         <motion.li
-          className="cursor-pointer hover:text-gray-400"
+          className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
           Reference
         </motion.li>
         <motion.li
-          className="cursor-pointer hover:text-gray-400"
+          className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
           What We Do
         </motion.li>
         <motion.li
-          className="relative cursor-pointer hover:text-gray-400"
+          className="relative cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
-          Language
-          <select
-            className="ml-2 bg-black text-white border border-gray-600 rounded p-1 cursor-pointer hover:bg-gray-700 focus:outline-none"
-          >
-            <option value="en">English</option>
-            <option value="cz">Čeština</option>
-            <option value="es">Español</option>
-          </select>
+          <div className="ml-2 bg-black text-center border border-gray-600 rounded-full p-2 cursor-pointer hover:border-white focus:outline-none relative">
+            <select
+              className="bg-black text-center text-lime-400 cursor-pointer appearance-none focus:outline-none rounded-full px-4 py-1"
+              style={{
+                appearance: 'none', // Ensure the default browser styling is overridden
+                WebkitAppearance: 'none', // For Safari
+                MozAppearance: 'none', // For Firefox
+                backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\' strokeWidth=\'2\' strokeLinecap=\'round\' strokeLinejoin=\'round\'%3E%3Cpath d=\'M6 9l6 6 6-6\' /%3E%3C/svg%3E")',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'right 0.5rem center',
+                backgroundSize: '1rem',
+                paddingRight: '2rem', // Ensure space for the arrow
+              }}
+                 >
+              <option value="en">EN</option>
+              <option value="cz">CZ</option>
+              <option value="es">ES</option>
+            </select>
+          </div>
         </motion.li>
       </ul>
     </motion.nav>
