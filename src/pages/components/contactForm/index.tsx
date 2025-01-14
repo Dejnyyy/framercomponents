@@ -70,12 +70,12 @@ const ContactForm = () => {
           <label htmlFor="consent" className="ml-2 text-gray-400 text-sm">
             I hereby give my consent to the processing of my personal data and
             declare that I’ve read the
-            <a
+            <Link
               href="/privacy"
               className="text-green-400 underline hover:text-green-300"
             >
               privacy statement
-            </a>
+            </Link>
             .
           </label>
         </motion.div>
@@ -86,17 +86,20 @@ const ContactForm = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <motion.button
+         <motion.button
             className="relative px-8 py-3 text-white font-bold rounded-full bg-black overflow-hidden"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
-            {/* Gradient Border */}
-            <div className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-cyan-400 to-lime-400 p-1">
-              <div className="w-full h-full bg-black rounded-full"></div>
+            >
+            {/* Gradient Border with Color Rotation */}
+            <div
+                className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-cyan-400 to-lime-400 p-1 animate-gradient-rotate bg-[length:200%_200%]"
+            >
+                <div className="w-full h-full bg-black rounded-full"></div>
             </div>
             <span className="relative">ODESLAT</span>
-          </motion.button>
+            </motion.button>
+
         </motion.div>
       </motion.form>
     </div>
