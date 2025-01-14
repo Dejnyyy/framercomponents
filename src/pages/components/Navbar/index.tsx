@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
+    <>
+     {/* Gradient Line */}
+     <div className="gradient-line"></div>
+      
     <motion.nav
-      className="bg-black text-white p-4 fixed top-0 left-0 w-full flex justify-between items-center shadow-md z-50"
+      className="bg-black text-white p-4 fixed rounded-b-3xl border-gray-300 border-b top-1 left-0 w-full flex justify-between items-center shadow-md z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 75 }}
@@ -22,25 +26,25 @@ const Navbar = () => {
           className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
-          About Us
+          CO DĚLÁME
         </motion.li>
         <motion.li
           className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
-          Contact
+          REFERENCE
         </motion.li>
         <motion.li
           className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
-          Reference
+          NAŠE ZÁZEMÍ
         </motion.li>
         <motion.li
           className="cursor-pointer text-gray-400 hover:text-white"
           whileHover={{ scale: 1.1 }}
         >
-          What We Do
+          KONTAKT
         </motion.li>
         <motion.li
           className="relative cursor-pointer text-gray-400 hover:text-white"
@@ -68,6 +72,7 @@ const Navbar = () => {
         </motion.li>
       </ul>
     </motion.nav>
+    </>
   );
 };
 
