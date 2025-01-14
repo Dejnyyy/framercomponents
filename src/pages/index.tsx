@@ -54,6 +54,13 @@ export default function Home() {
               </p>
             </Link>
           </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }}>
+            <Link href={"/components/HeroSection"}>
+              <p className="cursor-pointer text-lg font-medium px-6 py-2 rounded bg-gradient-to-tr from-zinc-500 to-black hover:scale-105 transform transition duration-300 shadow-lg">
+                HeroSection
+              </p>
+            </Link>
+          </motion.div>
         </motion.div>
       </main>
     </>
