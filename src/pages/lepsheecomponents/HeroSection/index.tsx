@@ -8,9 +8,8 @@ interface HeroSectionProps {
       partOne?: string;
       partTwo?: string;
     };
-    subtitle?: string;
-    }
-const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
+}
+const HeroSection = ({ title, }: HeroSectionProps) => {
   return (
     <div className="relative bg-black text-white min-h-screen flex flex-col justify-center items-center px-6">
       <div className="grid grid-cols-2">
@@ -37,7 +36,6 @@ const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
             lepshee&#39;ch řešení.
           </p>
         </div>
-
         <div className="mt-8 flex justify-center gap-4">
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -50,7 +48,6 @@ const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
             className="relative px-8 py-3 text-white font-bold rounded-full bg-black overflow-hidden"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            
           >
             {/* Gradient Border with Color Rotation */}
             <div className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-cyan-400 to-lime-400 p-1 animate-gradient-rotate bg-[length:200%_200%]">
