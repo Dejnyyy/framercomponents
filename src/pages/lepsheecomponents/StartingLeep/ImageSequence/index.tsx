@@ -27,13 +27,13 @@ const ImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameCount })
   }, [frameCount]);
 
   return (
-    <div className="flex justify-center ">
+    <div className="mx-auto w-full flex justify-center">
       {images.length > 0 && (
         <motion.img
           key={currentFrame} // Use key to trigger re-render
           src={images[currentFrame]}
           alt={`Frame ${currentFrame}`}
-          className="w-64 h-64 max-w-[500px]" // Adjust Tailwind styling as needed
+          className="absolute top-4 left-1/2 transform -translate-x-1/2 w-64 h-64" // Center-top position
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0 }}
