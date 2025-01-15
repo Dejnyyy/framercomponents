@@ -54,7 +54,7 @@ export default function Home() {
             </Link>
           </motion.div>
           <Link href={"/lepshee"}>
-            <p className="cursor-pointer text-lg font-medium px-6 py-2 rounded bg-gradient-to-tr from-pink-600 to-rose-600 hover:scale-105 transform transition duration-300 shadow-lg">
+            <p className="cursor-pointer text-lg font-medium px-6 py-2 rounded bg-gradient-to-tr from-blue-600 to-pink-600 hover:scale-105 transform transition duration-300 shadow-lg">
               Lepshee
             </p>
           </Link>

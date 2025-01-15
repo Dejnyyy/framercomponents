@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Carousel from "../Carousel";
-
+import Image from "next/image";
 interface HeroSectionProps {
     title?: {
       partOne?: string;
@@ -13,7 +13,8 @@ interface HeroSectionProps {
 const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
   return (
     <div className="relative bg-black text-white min-h-screen flex flex-col justify-center items-center px-6">
-      <Link href={"/"}><p className="absolute top-4 left-4">Back</p></Link>
+      <div className="grid grid-cols-2">
+     
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -59,6 +60,10 @@ const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
           </motion.button>
         </div>
       </motion.div>
+      <motion.div>
+        <Image src="/lepsheeFactory.png" alt="Hero" width={3000} height={3000} />
+      </motion.div>
+      </div>
     </div>
   );
 };

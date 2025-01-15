@@ -50,7 +50,7 @@ export default function Home() {
           <motion.div whileHover={{ scale: 1.1 }}>
             <Link href={"/lepsheecomponents/HeroSection"}>
               <p className="cursor-pointer text-lg font-medium px-6 py-2 rounded bg-gradient-to-tr from-pink-600 to-rose-600 hover:scale-105 transform transition duration-300 shadow-lg">
-                
+                Hero Section
               </p>
             </Link>
           </motion.div>
