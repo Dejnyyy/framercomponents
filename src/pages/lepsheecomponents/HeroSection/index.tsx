@@ -30,14 +30,10 @@ const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
           </span>
         </h1>
         <div className="w-2/3 mx-auto">
-          <p className="mt-6 text-lg md:text-xl font-light text-zinc-400">
-            {subtitle || (
-              <>
-                Jsme kreativní gigafactory, která se specializuje na stavbu{" "}
-                <span className="font-bold text-white"><Carousel /></span> prostě
-                lepshee&#39;ch řešení.
-              </>
-            )}
+          <p className="mt-6 text-lg md:text-lg  text-zinc-400">
+            Jsme kreativní gigafactory, která se specializuje na stavbu{" "}
+            <span className=" text-white"><Carousel /></span> prostě
+            lepshee&#39;ch řešení.
           </p>
         </div>
 
@@ -46,7 +42,6 @@ const HeroSection = ({ title, subtitle}: HeroSectionProps) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className="px-8 rounded-full py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-teal-400 text-white font-medium"
-            
           >
             Co děláme?
           </motion.button>
