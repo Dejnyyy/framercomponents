@@ -3,30 +3,28 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Carousel from "../Carousel";
 import Image from "next/image";
-interface HeroSectionProps {
-    title?: {
-      partOne?: string;
-      partTwo?: string;
-    };
-}
-const HeroSection = ({ title, }: HeroSectionProps) => {
+import Navbar from "../Navbar";
+import StartingLeep from "../StartingLeep";
+
+const HeroSection = () => {
   return (
-    <div className="relative bg-black text-white min-h-screen flex flex-col justify-center items-center px-6">
+    <div className="relative bg-black text-white min-h-screen">
+        <Navbar />
+        <StartingLeep />
       <div className="grid grid-cols-2">
-     
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center"
+        className="text-center m-auto"
       >
         <h1 className="text-4xl md:text-6xl font-bold uppercase">
           <span className="text-transparent bg-clip-text bg-gradient-to-r to-gray-200 from-gray-500">
-            {title?.partOne || "Děláme Digitální"}
+            {"Děláme Digitální"}
           </span>
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">
-            {title?.partTwo || "Svět Lepshee"}
+            {"Svět Lepshee"}
           </span>
         </h1>
         <div className="w-2/3 mx-auto">
@@ -58,7 +56,7 @@ const HeroSection = ({ title, }: HeroSectionProps) => {
         </div>
       </motion.div>
       <motion.div>
-        <Image src="/lepsheeFactory.png" alt="Hero" width={3000} height={3000} />
+        <Image src="/lepsheeFactory.png" alt="Hero" className="w-full h-full scale-150" width={3000} height={3000} />
       </motion.div>
       </div>
     </div>
