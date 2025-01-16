@@ -4,13 +4,13 @@ import Link from "next/link";
 import Carousel from "../Carousel";
 import Image from "next/image";
 import Navbar from "../Navbar";
-import StartingLeep from "../StartingLeep";
+import StartingLean from "../StartingLean";
 
 const HeroSection = () => {
   return (
     <div className="relative bg-black text-white min-h-screen">
         <Navbar />
-        <StartingLeep />
+        <StartingLean />
       <div className="grid grid-cols-2">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
