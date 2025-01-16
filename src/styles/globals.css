@@ -6,24 +6,26 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.gradient-line {
+  position: fixed; /* Adjust as necessary */
+  top: 0;
+  left: 0;
+  height: 5px; /* Adjust line height */
+  width: 100%; /* Full width */
+  background: linear-gradient(to right,#FFDD3A, #FF3FE0, #64FFFF, #E7FF64, #FFE03C, #FFDD3A);
+  background-size: 200%; /* Creates the "seamless" wrap */
+  animation: moveGradient 3s linear infinite;
+}
 
-@keyframes swipeGradient {
+@keyframes moveGradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0;
   }
   100% {
-    background-position: 100% 50%;
+    background-position: 200% 0;
   }
 }
 
-
-.gradient-line {
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #FFDD3A, #FF3FE0, #64FFFF, #E7FF64, #FFE03C, #FFDD3A); 
-  background-size: 300% 100%; 
-  animation: swipeGradient 2s linear infinite; 
-}
 
 .gradient-button {
   background: linear-gradient(90deg, #5FF9FF, #E0FF60);

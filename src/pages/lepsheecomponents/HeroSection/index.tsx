@@ -55,7 +55,6 @@ const HeroSection = () => {
         </div>
       </motion.div>
       <motion.div>
-        {/*<Image src="/lepsheeFactory.png" alt="Hero" className="w-full h-full scale-150" width={3000} height={3000} />*/}
       <StartingFactory />
       </motion.div>
       </div>

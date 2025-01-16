@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className="fixed w-full z-50">
       {/* Gradient Line */}
       <motion.div
-        className={`gradient-line ${scrolled ? "opacity-100" : "opacity-0"}`}
+        className={`gradient-line ${scrolled ? "opacity-1" : "opacity-0"}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: scrolled ? 1 : 0 }}
         transition={{ duration: 0.5 }}
