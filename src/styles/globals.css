@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   overflow-x: hidden;
 }
 
+@keyframes swipeGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .gradient-line {
-    height: 4px;
-    background: linear-gradient(
-      90deg,
-      #fff700,
-      #ff00bb,
-      #42c9ff,
-      #fff700
-    );
-    box-shadow: 0px 0px 10px rgba(255, 77, 109, 0.7);
-  }
-  
-  .gradient-button{
-    background: linear-gradient(
-      90deg,
-      #5FF9FF,
-      #E0FF60,
-    );
-  }
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #FFDD3A, #FF3FE0, #64FFFF, #E7FF64, #FFE03C);
+  background-size: 300% 100%;
+  animation: swipeGradient 2s linear infinite; 
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #5FF9FF, #E0FF60);
+}
