@@ -1,21 +1,7 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("EN");
-
-  const languages = ["EN", "DE", "CZ"];
-
-  const handleLanguageSelect = (language: string) => {
-    setSelectedLanguage(language);
-    setIsOpen(false);
-  };
-
-  const toggleDropdown = () => {
-    setIsOpen((prev) => !prev);
-  };
-
   return (
     <>
       {/* Gradient Line */}
@@ -33,8 +19,6 @@ const Navbar = () => {
         >
           lepshee
         </motion.div>
-
-
 
         {/* Right Section */}
         <ul className="flex gap-6 items-center text-sm font-medium">
@@ -63,56 +47,8 @@ const Navbar = () => {
             KONTAKT
           </motion.li>
 
-
-          {/* Language Selector */}
-          <motion.li
-            className="relative cursor-pointer text-gray-400 hover:text-white flex items-center"
-          >
-            <div className="flex items-center">
-              {/* Language Display */}
-              <motion.div
-                className="ml-2 bg-black text-center border border-gray-600 rounded-full px-6  cursor-pointer hover:border-white focus:outline-none"
-                onClick={toggleDropdown}
-                whileHover={{ scale: 1.1 }}
-              >
-                <span className="text-lg bg-gradient-to-t from-green-500 to-green-200 text-transparent bg-clip-text">
-                  {selectedLanguage}
-                </span>
-              </motion.div>
-
-              {/* Arrow Button Positioned Outside */}
-              <motion.button
-                onClick={toggleDropdown}
-                initial={{ rotate: 0 }}
-                animate={{ rotate: isOpen ? 180 : 0 }}
-                className="ml-3 text-zinc-400 text-md focus:outline-none relative"
-              >
-                ▲
-              </motion.button>
-            </div>
-
-            {/* Dropdown */}
-            {isOpen && (
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="absolute top-14 left-0 w-32 bg-gradient-to-b from-black to-zinc-400 rounded-lg shadow-lg"
-              >
-                {languages.map((lang) => (
-                  <div
-                    key={lang}
-                    className={`text-center text-gray-300 py-2 cursor-pointer ${
-                      lang === selectedLanguage ? " text-white" : ""
-                    } hover:bg-gray-700`}
-                    onClick={() => handleLanguageSelect(lang)}
-                  >
-                    {lang}
-                  </div>
-                ))}
-              </motion.div>
-            )}
-          </motion.li>
+          {/* Language Selector Component */}
+          <LanguageSelector />
         </ul>
       </motion.nav>
     </>
