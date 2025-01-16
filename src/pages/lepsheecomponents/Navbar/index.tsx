@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("EN");
 
-  const languages = ["EN", "DE", "CS"];
+  const languages = ["EN", "DE", "CZ"];
 
   const handleLanguageSelect = (language: string) => {
     setSelectedLanguage(language);
@@ -34,6 +34,8 @@ const Navbar = () => {
           lepshee
         </motion.div>
 
+
+
         {/* Right Section */}
         <ul className="flex gap-6 items-center text-sm font-medium">
           <motion.li
@@ -61,18 +63,19 @@ const Navbar = () => {
             KONTAKT
           </motion.li>
 
+
           {/* Language Selector */}
           <motion.li
             className="relative cursor-pointer text-gray-400 hover:text-white flex items-center"
           >
-            <div className="flex items-center relative">
+            <div className="flex items-center">
               {/* Language Display */}
               <motion.div
-                className="ml-2 bg-black text-center border border-gray-600 rounded-full px-4 py-2 cursor-pointer hover:border-white focus:outline-none"
+                className="ml-2 bg-black text-center border border-gray-600 rounded-full px-6  cursor-pointer hover:border-white focus:outline-none"
                 onClick={toggleDropdown}
                 whileHover={{ scale: 1.1 }}
               >
-                <span className="text-lg text-white">
+                <span className="text-lg bg-gradient-to-t from-green-500 to-green-200 text-transparent bg-clip-text">
                   {selectedLanguage}
                 </span>
               </motion.div>
@@ -82,7 +85,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 initial={{ rotate: 0 }}
                 animate={{ rotate: isOpen ? 180 : 0 }}
-                className="ml-3 text-zinc-400 text-lg focus:outline-none relative"
+                className="ml-3 text-zinc-400 text-md focus:outline-none relative"
               >
                 ▲
               </motion.button>
