@@ -12,7 +12,7 @@ html {
   left: 0;
   height: 5px; /* Adjust line height */
   width: 100%; /* Full width */
-  background: linear-gradient(to right,#FFDD3A, #FF3FE0, #64FFFF, #E7FF64, #FFE03C, #FFDD3A);
+  background: linear-gradient(to right,#FFDD3A, #FF3FE0, #64FFFF, #E7FF64, #FFE03C);
   background-size: 200%; /* Creates the "seamless" wrap */
   animation: moveGradient 3s linear infinite;
 }
