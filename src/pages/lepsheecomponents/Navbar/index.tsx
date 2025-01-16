@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       {/* Left Section */}
       <motion.div
-        className="text-xl font-bold cursor-pointer"
+        className="text-xl font-bold cursor-pointer ml-4"
         whileHover={{ scale: 1.1 }}
       >
         lepshee
@@ -52,17 +52,20 @@ const Navbar = () => {
           <div className="ml-2 bg-black text-center border border-gray-600 rounded-full p-2 cursor-pointer hover:border-white focus:outline-none relative">
             <select
               className="bg-black text-center text-lime-400 cursor-pointer appearance-none focus:outline-none rounded-full px-4 py-1"
-              style={{
-                appearance: 'none', // Ensure the default browser styling is overridden
-                WebkitAppearance: 'none', // For Safari
-                MozAppearance: 'none', // For Firefox
+              name="language"
+             
+            ><select name="language"
+            style={{
                 backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\' strokeWidth=\'2\' strokeLinecap=\'round\' strokeLinejoin=\'round\'%3E%3Cpath d=\'M6 9l6 6 6-6\' /%3E%3C/svg%3E")',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'right 0.5rem center',
-                backgroundSize: '1rem',
-                paddingRight: '2rem', // Ensure space for the arrow
-              }}
-                 >
+                    appearance: 'none', // Ensure the default browser styling is overridden
+                    WebkitAppearance: 'none', // For Safari
+                    MozAppearance: 'none', // For Firefox
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'right 0.5rem center',
+                    backgroundSize: '1rem',
+                    paddingRight: '2rem', // Ensure space for the arrow
+            }}
+            id=""></select>
               <option value="en">EN</option>
               <option value="cz">CZ</option>
               <option value="es">ES</option>
