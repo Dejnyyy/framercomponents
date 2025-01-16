@@ -61,7 +61,6 @@ const ImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameCount, g
 
         {/* Sequence Image */}
         <motion.img
-          key={currentFrame}
           src={images[currentFrame]}
           alt={`Frame ${currentFrame}`}
           className="absolute top-0 left-0 w-full h-full"

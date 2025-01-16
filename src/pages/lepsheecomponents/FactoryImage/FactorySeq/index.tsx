@@ -44,9 +44,8 @@ const FactoryImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameC
     >
         {/* Sequence Image */}
         <motion.img
-          key={currentFrame}
           src={images[currentFrame]}
-          alt={`Frame ${currentFrame}`}
+          alt={`Lean Factory`}
           className="absolute top-0 left-0 w-full h-full"
         />
     

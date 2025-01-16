@@ -1,11 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Carousel from "../Carousel";
 import Image from "next/image";
 import Navbar from "../Navbar";
 import StartingLean from "../StartingLean";
-
+import StartingFactory from "../FactoryImage";
 const HeroSection = () => {
   return (
     <div className="relative bg-black text-white min-h-screen">
@@ -56,7 +55,8 @@ const HeroSection = () => {
         </div>
       </motion.div>
       <motion.div>
-        <Image src="/lepsheeFactory.png" alt="Hero" className="w-full h-full scale-150" width={3000} height={3000} />
+        {/*<Image src="/lepsheeFactory.png" alt="Hero" className="w-full h-full scale-150" width={3000} height={3000} />*/}
+      <StartingFactory />
       </motion.div>
       </div>
     </div>
