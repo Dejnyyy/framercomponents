@@ -24,7 +24,7 @@ const FactoryImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameC
     // Animate through frames
     const interval = setInterval(() => {
       setCurrentFrame((prev) => (prev + 1) % frameCount);
-    }, 50); // 50ms per frame
+    }, 100); // 50ms per frame
     return () => clearInterval(interval);
   }, [frameCount]);
 
