@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* Gradient Line */}
       <div className="gradient-line"></div>
       <motion.nav
-        className="bg-black  text-white p-4 rounded-b-3xl border-gray-700 border-b w-full flex justify-between items-center shadow-md z-50"
+        className="bg-black text-white p-4 rounded-b-3xl border-gray-700 border-b w-full flex justify-between items-center z-50"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 75 }}

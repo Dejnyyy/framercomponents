@@ -34,11 +34,11 @@ const HeroSection = () => {
             lepshee&#39;ch řešení.
           </p>
         </div>
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-8 flex justify-center gap-4 ">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="relative px-8 py-3 text-white font-bold bg-gradient-to-r from-[#FE18DD] to-[#60F9FF] rounded-full overflow-hidden"
+            className="relative px-8 py-3 text-white uppercase bg-gradient-to-r from-[#FE18DD] to-[#60F9FF] rounded-full overflow-hidden"
             >
             Co děláme?
           </motion.button>

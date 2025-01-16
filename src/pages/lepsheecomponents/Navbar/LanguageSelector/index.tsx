@@ -25,7 +25,7 @@ const LanguageSelector: React.FC = () => {
           onClick={toggleDropdown}
           whileHover={{ scale: 1.1 }}
         >
-          <span className="text-lg bg-gradient-to-t from-green-500 to-green-200 text-transparent bg-clip-text">
+          <span className="text-lg bg-gradient-to-b from-[#61F9FD] to-[#DFFF62] text-transparent bg-clip-text">
             {selectedLanguage}
           </span>
         </motion.div>
