@@ -7,7 +7,7 @@ import StartingLean from "../StartingLean";
 import StartingFactory from "../FactoryImage";
 const HeroSection = () => {
   return (
-    <div className="relative bg-black text-white min-h-screen">
+    <div className="relative bg-black text-white min-h-screen w-full">
         <Navbar />
         <StartingLean />
       <div className="grid grid-cols-2">

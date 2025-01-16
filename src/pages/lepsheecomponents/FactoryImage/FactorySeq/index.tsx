@@ -10,7 +10,6 @@ interface ImageSequenceProps {
 const FactoryImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameCount }) => {
   const [currentFrame, setCurrentFrame] = useState(0);
   const [images, setImages] = useState<string[]>([]);
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     // Preload all images
@@ -27,16 +26,6 @@ const FactoryImageSequence: React.FC<ImageSequenceProps> = ({ folderPath, frameC
     }, 100); // 50ms per frame
     return () => clearInterval(interval);
   }, [frameCount]);
-
-  useEffect(() => {
-    // Listen to scroll events
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <div

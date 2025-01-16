@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="Swipe Up Marketing Agency" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen text-white flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900">
+      <main className="flex min-h-screen w-full text-white flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900">
        <HeroSection />
        <div className="w-full h-64 bg-black"></div>
        <SectionTwo />
