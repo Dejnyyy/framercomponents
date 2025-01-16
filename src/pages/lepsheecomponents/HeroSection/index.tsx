@@ -8,7 +8,7 @@ import StartingLeep from "../StartingLeep";
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-black text-white min-h-screen pb-20">
+    <div className="relative bg-black text-white min-h-screen">
         <Navbar />
         <StartingLeep />
       <div className="grid grid-cols-2">
