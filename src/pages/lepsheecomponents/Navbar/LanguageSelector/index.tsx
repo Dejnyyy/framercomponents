@@ -35,7 +35,7 @@ const LanguageSelector: React.FC = () => {
           onClick={toggleDropdown}
           initial={{ rotate: 0 }}
           animate={{ rotate: isOpen ? 180 : 0 }}
-          className="ml-3 text-zinc-400 text-md focus:outline-none relative"
+          className="ml-3 mr-3 text-zinc-400 text-md focus:outline-none relative"
         >
           ▼
         </motion.button>
