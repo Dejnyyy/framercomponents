@@ -23,14 +23,13 @@ const HeroSection = () => {
           </h1>
         </div>
           <br />
-          <div className="grid grid-cols-1">
+
+          <div className="text-left ml-40 w-1/2">
           <h1 className="text-5xl font-bold uppercase">
-          <span className="text-transparent ml-20 bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-500">
             {"digitální řešení na míru"}
           </span>
         </h1>
-        </div>
-        <div className="w-2/3 mx-auto">
           <p className="mt-6 text-lg  text-zinc-400">
           </p>
           <p className="mt-6 text-lg  text-zinc-400 font-Montserrat">
