@@ -38,8 +38,8 @@ const HeroSection = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="px-8 rounded-full py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-teal-400 text-white font-medium"
-          >
+            className="relative px-8 py-3 text-white font-bold bg-gradient-to-r from-[#FE18DD] to-[#60F9FF] rounded-full overflow-hidden"
+            >
             Co děláme?
           </motion.button>
           <motion.button
@@ -48,7 +48,7 @@ const HeroSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             {/* Gradient Border with Color Rotation */}
-            <div className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-cyan-400 to-lime-400 p-1 animate-gradient-rotate bg-[length:200%_200%]">
+            <div className="absolute inset-0 w-full h-full rounded-full bg-gradient-to-r from-[#5FF9FF] to-[#E0FF60] p-1 animate-gradient-rotate bg-[length:200%_200%]">
               <div className="w-full h-full bg-black rounded-full"></div>
             </div>
             <span className="relative uppercase text-zinc-400 font-medium">Kontaktujte nás</span>
